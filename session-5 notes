@@ -1,0 +1,230 @@
+Some related to json and arrays 
+function 
+types of function
+ 
+
+5 minutes =>JsoN ?
+1.Human readable
+2.Language independent
+3.Open standard file format
+4.Key:value pair
+5.Stringfy object
+
+
+JSON=>
+A collection of data:
+fact or figures=
+object ,record,struct,dictionary,hash table
+,trees
+
+Orderlist of elements
+Arrays ,Vectors,list ,
+
+
+
+// Write a json Data for employeee contains below parameter
+// name,empid,email,age,salary ,address
+
+// 3 employees
+
+// Array of object
+
+// print the data using for of loop
+
+//Create an array of objects
+const p = [
+  {
+    name: "John",
+    empid: "E123",
+    email: "j@gmail.com",
+    age: "35",
+    salary: "1000$",
+    address: "Chennai",
+  },
+  {
+    name: "kohn",
+    empid: "B123",
+    email: "B@gmail.com",
+    age: "15",
+    salary: "2000$",
+    address: "Delhi",
+  },
+  {
+    name: "mohn",
+    empid: "P123",
+    email: "M@gmail.com",
+    age: "15",
+    salary: "7000$",
+    address: "Mumbai",
+  },
+];
+
+// {key:value,key:value}
+// Get object out of this array json
+// for (let obj of p) {
+//   for (let key in obj) {
+//     console.table(obj[key]);
+//   }
+// }
+
+// console.log(p);
+//Normal
+// for (i = 0; i < p.length; i++) {
+//   console.log(p[i].salary);
+// }
+
+// for (let obj of p) {
+//   console.log(obj);
+// }
+//for in loop
+
+for (let x of p) {
+  //emp is the array
+  for (let y in x) {
+    console.log(y, x[y]); //for key:value output format
+  }
+}
+
+
+
+
+
+
+
+
+// Write a json Data for employeee contains below parameter
+// name,empid,email,age,salary ,address
+
+// 3 employees
+
+// Array of object
+
+// print the data using for of loop
+
+//Create an array of objects
+//Object of object=>key(index) and value pair
+var obj = {
+  1: {
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+  },
+  2: {
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+  },
+  3: {
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+  },
+  4: {
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+    p: v,
+  },
+};
+// Write a json Data for employeee contains below parameter
+// name,empid,email,age,salary ,address
+
+// 3 employees
+
+// Object of object
+
+// print the data using forEach
+
+//Object of object=>key(index) and value pair
+var obj = {
+  1: {
+    name: "alam",
+    empid: "124",
+    email: "alam@gmail.com",
+    age: "34",
+    salary: "6000$",
+  },
+  2: {
+    name: "plam",
+    empid: "224",
+    email: "plam@gmail.com",
+    age: "34",
+    salary: "3000$",
+  },
+  3: {
+    name: "kalam",
+    empid: "424",
+    email: "klam@gmail.com",
+    age: "14",
+    salary: "2000$",
+  },
+  4: {
+    name: "Talam",
+    empid: "1124",
+    email: "talam@gmail.com",
+    age: "48",
+    salary: "9000$",
+  },
+};
+
+// forEach loop
+
+// Object.keys(obj).forEach(function () {
+//   console.log(obj);
+// });
+
+// forEach is rangebased
+// Ecamscript2016
+// Object.keys(obj).forEach(function (key, value) {
+//   console.log(obj[value]);
+// });
+
+// ECmascript 2017
+Object.entries(obj).forEach(function (key, value) {
+  console.log(obj[key]);
+});
+// starting and ending
+
+// using for in loop
+for (var key in obj) {
+  console.log(obj);
+}
+
+//  ES6Es5 and
+// Write a code using ajax-xmlhttp request with json api?
+// https://jsonplaceholder.typicode.com/posts
+
+
+xmlhttp request
+// Set up our HTTP request
+var xhr = new XMLHttpRequest();
+
+// Setup our listener to process completed requests
+xhr.onload = function () {
+  // Process our return data
+  if (xhr.status >= 200 && xhr.status < 300) {
+    // Runs when the request is successful
+    var t = JSON.parse(this.response);
+    console.log(t);
+  } else {
+    // Runs when it's not
+    console.log(xhr.responseText);
+  }
+};
+
+// Create and send a GET request
+// The first argument is the post type (GET, POST, PUT, DELETE, etc.)
+// The second argument is the endpoint URL
+xhr.open("GET", "https://jsonplaceholder.typicode.com/posts");
+xhr.send();
+
+
+
+// and print the data on console

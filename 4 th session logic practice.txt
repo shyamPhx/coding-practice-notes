@@ -1,0 +1,186 @@
+// What will be the output of the following code?
+
+var output =(function(x) {
+    delete x;
+    return x;
+})(0);
+console.log(output);
+
+// Delete operator is used to delete a property of an object 
+
+
+
+
+2.
+var fruits = ["Apple", "Mangoes", "Banana", "Grapes"];
+delete fruits[2];
+console.log(fruits.length);
+console.table(fruits);
+
+
+(function (para) {
+  console.log("Welcome to Anonymous function" + para);
+})("guvi");
+
+// A function without any name is anonymous function.
+
+
+
+//Predict the output of the code snippet
+
+var a = "Hello people";
+
+var b = a;
+b = "New People";
+console.log(a);
+
+
+// Here in string, it is passed by value and value is copied 
+
+
+
+
+//Predict the output of the code snippet
+
+var arr1 = [0, 1, 2, 3, 4, 5];
+var arr2 = arr1.slice();
+arr2[0] = 50;
+console.log(arr1);
+
+console.log(arr2);
+
+// slice() function copies th element of from one array to another and return new array
+
+map=>create a logic based 
+
+
+
+console.log(id);
+
+// 1. null
+// 2.undefined
+// 3.type error
+// 4.reference error :id is not defined
+
+
+// Ans: id is not defined 
+
+
+
+
+console.log(id);
+var id = "101";
+// 1. null
+// 2.undefined
+// 3.type error
+// 4.reference error :id is not defined
+
+// Ans: id is not defined
+
+
+// is hositing is good or not?
+
+// its bad idea 
+
+
+
+
+var id = "101";
+
+//this your function
+(function () {
+  console.log(id);
+  var id = "1001";
+})();
+
+
+
+//this your function
+(function () {
+  var obj1 = new Object({ x: "x" });
+  var obj2 = new Object({ x: "x" });
+  console.log(obj1 == obj2); // value false
+  console.log(obj1 === obj2); //value and type  false
+})();
+
+// 1.false true
+// 2.true false
+// 3.true true
+// 4.false falsea
+
+
+
+
+
+// //this your function
+// (function () {
+//   var obj1 = new Object({ x: "x" });
+//   var obj2 = new Object({ x: "x" });
+console.log(obj1 == obj2); // value false
+//   console.log(obj1 === obj2); //value and type  false
+// })();
+
+arr1 = [10, 20];
+arr2 = [10, 20];
+
+console.log(arr1 == arr2);
+// 1.false true
+// 2.true false
+// 3.true true
+// 4.false falsea
+
+// 2 and 3==>false
+
+// 2=>Number '2'=String  ===
+
+
+
+
+// //this your function
+(function () {
+  var obj1 = new Object({ x: "x" });
+  var obj2 = new Object({ x: "x" });
+  console.log(obj1[0] == obj2[0]);
+  // console.log(obj1 === obj2);
+})();
+
+// arr1 = [10, 20];
+// arr2 = [10, 20];
+
+// console.log(arr1 == arr1);
+// 1.false true
+// 2.true false
+// 3.true true
+// 4.false falsea
+
+// 2 and 3==>false
+
+// 2=>Number '2'=String  ===
+
+
+
+(function () {
+  var obj1 = Object.create({
+    foo: "foo",
+  });
+
+  var obj2 = obj1; // obj1 is assigne to obj 2
+  console.log(obj1 == obj2);
+  console.log(obj1 === obj2);
+  console.log(obj1.toString() == obj2.toString());
+  console.log(obj1.toString() === obj2.toString());
+})();
+
+// 1.false false false false  
+// 2.true false true false 
+// 3.false true false true
+// 4.true true  true true 
+Topic: B27 WD Session 20th August 2021
+Start Time : Aug 20, 2021 09:51 AM
+
+Meeting Recording:
+https://us02web.zoom.us/rec/share/udThZrelaKDfXxE7xQvzP4wD-uy-TPfh0w-ccrYYugDPFeToSmP0-GF_X7-sabLm.kja-93dSgaS4ggTy
+
+Access Passcode: x3%xuES2
+
+

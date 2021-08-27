@@ -1,0 +1,143 @@
+Functions:
+what is Function?
+Types of Function
+Different ways of defining a function
+
+Example or exercise:
+Function=>it is a basically a group of statements which perform specific task /operation
+
+Why?Using function ,it allows us to reuse the code and it is easy to debug our
+
+It divides a big program into smaller parts and we can achieve modular 
+programming
+
+Function is a 2 step process:
+1.creating or defining or declaring the function
+
+function keyword 
+
+2.calling or a function /invoking
+
+
+
+
+Function Defination or Creation of function
+1.function keyword
+2.{
+
+}=>
+
+function name()
+{
+//Body of the function
+}
+
+
+
+Function Naming Convention:
+Function denotes your task =>you are describing which should be
+a verb
+getSomething=>return data
+calculateSomething=>
+checkSomething=>true or false 
+
+createField()
+getArrayElements()
+checkEmpId();
+
+
+//defining or declaring
+function getCall() {
+  //body of the function
+  console.log("Welcome to function");
+  alert("Welcome to function");\
+  
+}
+
+// FUnction calling or invoking
+getCall();
+
+
+//create a function with name sayWelcome()
+
+function sayWelcome(name) {
+  console.log("Hi. i am " + name);
+}
+
+//call this function
+sayWelcome("Ajay");
+sayWelcome("Sathwick");
+sayWelcome("sanuja");
+sayWelcome("Guvi");
+
+// COde reusability
+
+
+
+function calculate_Addition(number1, number2) {
+  //logic
+  let add = number1 + number2;
+  let mul = number1 * number2;
+  let div = number1 / number2;
+  let mod = number1 % number2;
+  //   print;
+  console.log(add, mul, div, mod);
+  //   console.log(mul);
+  //   console.log(div);
+  //   console.log(mod);
+}
+
+calculate_Addition(5, 10);
+calculate_Addition(50, 100);
+calculate_Addition(100, 200);
+
+
+
+
+// ES6
+//Passing default values for function parameters and
+// function callPerson(name = "Lavish") {
+//   console.log(name);
+// }
+
+// callPerson();
+// callPerson("Pavish");
+// var peri;
+function getPerimeter_Rectangle(length = 2, breadth = 4) {
+  peri = 2 * (length + breadth);
+  console.log(peri); //12 ,60
+}
+
+getPerimeter_Rectangle();
+getPerimeter_Rectangle(10, 20);
+
+
+
+Types of FUnction:
+Regular function
+var name = "guvi ";
+//create a function with name sayWelcome()
+
+function sayWelcome() {
+  console.log("Hi Lavish.Welcome to" + name);
+}
+
+//call this function
+sayWelcome();
+
+
+
+parameterized function
+
+Return type Function(Function returning values)
+A function is able to return the values to the script from where it is called
+(caller function).
+
+return statement 
+2.It should always be placed at the last line of your code.
+
+(function (name) {
+  console.log("Hello .Welome to " + name);
+})("Guvi");
+
+// What is anonymous function ?

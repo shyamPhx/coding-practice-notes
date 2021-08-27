@@ -1,0 +1,179 @@
+Practice:
+Loops and arrays
+Write a  function myfun which accept an array given with the values 
+& return the arithmetic mean of those number 
+
+sample input:
+myfun([1,2,3]) 
+(1+2+3)/3=2
+
+
+Practice:
+1.create a function  greet which return value 'Welcome'
+2.declare a variable & call the greet and assign the result of the variable 
+ res.
+
+10 Min.
+
+function greet()
+{
+
+}
+//calling shoule be here 
+let res=
+
+function greet() {
+  return "Welome";
+}
+
+let res = greet();
+console.log(res);
+
+
+
+// 1.Define 3 function.
+// The first function fun1 return "I am fun 1"
+// The first function fun2 return "I am fun 2"
+// The first function fun3 return "I am fun 3"
+// & display 3 output on console.
+
+function fun1() {
+  return "I am function 1";
+}
+
+function fun2() {
+  return "I am function 2";
+}
+
+function fun3() {
+  return "I am function 3";
+}
+
+console.log(fun1());
+console.log(fun2());
+console.log(fun3());
+
+
+
+// // Write a function check_threedigit .If a number is greater than or equal to 100
+// // &  less than 1000
+// // It should return boolean value as true or false
+// // && and if else
+// // 10=>false
+// 200=>true
+
+function check_threedigit(value) {
+  if (value >= 100 && value < 1000) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(check_threedigit(10000));
+
+
+// Write a function onedigit which takes natural number and return one digit of
+// that number
+// input:
+// 1357
+// ouput:7
+
+function get_one_Digit(num) {
+  return num % 10;
+}
+
+console.log(get_one_Digit(1357));
+
+
+
+// Write a function check_equal which takes 3 number from user for
+// strict equality .The function should return boolean value if all 3 values
+// are equal
+// Input:
+// 5,5,5
+// Output:true
+
+// Input:
+// 5,6,5
+// Output:false
+
+function check_equal(num1, num2, num3) {
+  return num1 === num2 && num1 === num3;
+}
+
+console.log(check_equal(5, 6, 5));
+
+
+
+// Predict the value of num after executing below code snippet.
+
+let num = 3;
+num++; //4
+num = num * 2; //8
+num--; //7
+
+console.log(num--); //7
+console.log(num); // 6
+
+
+
+// Write a function check_unequal which takes 3 number from user for
+// strict inequality .The function should return boolean value if all 3 values
+// are  strict unequal =>true els false
+// 2,3,4=>true
+
+// 4,4,5=false
+function check_unequal(num1, num2, num3) {
+  return num1 !== num2 && num1 != num3 && num2 !== num3;
+}
+
+console.log(check_unequal(4, 4, 5));
+// B27 WD Feedback link  26/08/2021: https://forms.gle/RCR5QZBgU49y286Q9
+
+
+
+
+1.
+// Iterating with JSON object’s Values
+// Above is some information about my car. As you can see, I am not the best driver.
+// I have caused a few accidents.
+// Please update this driving record so that I can feel better about my driving skills.
+var myCar = {
+ make: ‘Bugatti’,
+ model: ‘Bugatti La Voiture Noire’,
+ year: 2019,
+ accidents: [
+ {
+ date: ‘3/15/2019’,
+ damage_points: ‘5000’,
+ atFaultForAccident: true
+ },
+ {
+ date: ‘7/4/2022’,
+ damage_points: ‘2200’,
+ atFaultForAccident: true
+ },
+ {
+ date: ‘6/22/2021’,
+ damage_points: ‘7900’,
+ atFaultForAccident: true
+ }
+ ]
+}
+// 1. Loop over the accidents array. Change atFaultForAccident from true to false.
+// 2. Print the dated of my accidents
+
+
+2.
+// Parsing an JSON object’s Values:
+// Write a function called “printAllValues” which returns an newArray of all the input object’s values.
+// Input (Object):
+// var object = {name: “RajiniKanth”, age: 33, hasPets : false};
+// Output:
+// [“RajiniKanth”, 33, false]
+// Sample Function proto:
+// // var obj = {name : “RajiniKanth”, age : 33, hasPets : false};
+// function printAllValues(obj) {
+//  // your code here
+// }
